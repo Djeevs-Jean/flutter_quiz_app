@@ -1,4 +1,4 @@
-import 'package:uuid/uuid.dart';
+import 'dart:math';
 import 'package:flutter/material.dart';
 
 
@@ -60,7 +60,6 @@ class CategoryQuestion {
     );
   }
 } */
-
 class QuizResult {
   final String id; // Identifiant unique
   final String quizTitle;
@@ -69,14 +68,24 @@ class QuizResult {
   final DateTime date;
 
   QuizResult({
-    // required this.id,
     required this.quizTitle,
     required this.score,
     required this.date,
     required this.countQuestion,
-   }) : id = Uuid().v1(); // Génère un nouvel ID unique pour chaque QuizResult
+  }) : id = _generateId(quizTitle, score);
 
+  static String _generateId(String quizTitle, double score) {
+    final sanitizedTitle = _sanitizeString(quizTitle);
+    final scoreString = score.toString();
+    return '$sanitizedTitle-$scoreString';
+  }
 
+  static String _sanitizeString(String input) {
+    final sanitized = input.replaceAll(RegExp(r'[^a-zA-Z0-9]+'), '-');
+    return sanitized.toLowerCase();
+  }
+
+  
   factory QuizResult.fromJson(Map<String, dynamic> json) {
     return QuizResult(
       quizTitle: json['quizTitle'],

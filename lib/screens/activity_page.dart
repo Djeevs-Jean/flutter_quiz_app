@@ -145,19 +145,29 @@ class ActivityTab extends StatefulWidget {
 } */
 
 class _ActivityTabState extends State<ActivityTab> {
+  late Future<List<QuizResult>> _quizResultsFuture;
+
+  @override
+  void initState() {
+    super.initState();
+    _quizResultsFuture = fetchQuizResults();
+  }
+
   Future<List<QuizResult>> fetchQuizResults() async {
     final quizResultData = QuizResultStorage();
     List<QuizResult> quizResults = await quizResultData.getQuizResults();
     return quizResults.reversed.toList();
   }
 
-  void deleteQuizResult(QuizResult quizResult) async{
-    // Supprimer le résultat de quiz ici
+  void deleteQuizResult(QuizResult quizResult) async {
     print('Deleting quiz result with ID: ${quizResult.id}');
-    final quizResultData = QuizResultStorage(); // Utiliser la même instance de QuizResultStorage
+    final quizResultData = QuizResultStorage();
     await quizResultData.deleteQuizResult(quizResult);
-  }
 
+    setState(() {
+      _quizResultsFuture = fetchQuizResults();
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<List<QuizResult>>(

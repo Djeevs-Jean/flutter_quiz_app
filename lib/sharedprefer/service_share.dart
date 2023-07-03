@@ -22,6 +22,21 @@ Future<void> saveQuizResult(QuizResult quizResult) async {
     return [];
   }
 
+   Future<void> deleteQuizResult(QuizResult quizResult) async {
+    final prefs = await SharedPreferences.getInstance();
+    final quizResults = await getQuizResults();
+    for (var result in quizResults) {
+      print('Quiz result ID: ${result.id}');
+    }
+    quizResults.removeWhere((result) => result.id == quizResult.id);
+    await prefs.setStringList(
+      key,
+      quizResults.map((result) => jsonEncode(result)).toList(),
+    );
+  }
+
+  /* 
+
   Future<void> deleteQuizResult(QuizResult quizResult) async {
     final prefs = await SharedPreferences.getInstance();
     final quizResults = await getQuizResults();
@@ -34,5 +49,5 @@ Future<void> saveQuizResult(QuizResult quizResult) async {
     final updatedResultsJson = quizResults.map((result) => jsonEncode(result.toJson())).toList();
     await prefs.setStringList(key, updatedResultsJson);
   }
-
+ */
 }
