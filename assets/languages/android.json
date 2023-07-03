@@ -2,82 +2,82 @@
   {
     "question": "What is Android?",
     "options": [
-      "A mobile operating system",
       "A programming language",
+      "A mobile operating system",
       "A development tool",
       "A hardware device"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   },
   {
     "question": "Which company developed the Android operating system?",
     "options": [
-      "Google",
       "Apple",
       "Microsoft",
-      "Samsung"
+      "Samsung",
+      "Google"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   },
   {
     "question": "What is the primary programming language used for Android app development?",
     "options": [
-      "Java",
       "C++",
       "Python",
+      "Java",
       "JavaScript"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 2
   },
   {
     "question": "What is an APK in the context of Android?",
     "options": [
-      "Android Package Kit, the file format used to distribute and install Android apps",
       "Application Program Kit, a development kit for Android apps",
       "Android Play Kit, a framework for in-app purchases",
-      "Android Project Kernel, the core components of an Android app"
+      "Android Project Kernel, the core components of an Android app",
+      "Android Package Kit, the file format used to distribute and install Android apps"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   },
   {
     "question": "Which XML-based language is used for designing the user interface of an Android app?",
     "options": [
-      "XML (eXtensible Markup Language)",
       "HTML (HyperText Markup Language)",
-      "CSS (Cascading Style Sheets)",
-      "JSON (JavaScript Object Notation)"
+      "XML (eXtensible Markup Language)",
+      "JSON (JavaScript Object Notation)",
+      "CSS (Cascading Style Sheets)"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   },
   {
     "question": "Which component is responsible for managing the lifecycle of an Android app?",
     "options": [
-      "Activity",
       "Fragment",
       "Service",
+      "Activity",
       "BroadcastReceiver"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 2
   },
   {
     "question": "Which class is used to handle user interactions and events in Android?",
     "options": [
-      "View",
       "Model",
       "Controller",
+      "View",
       "Activity"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   },
   {
     "question": "What is the purpose of an Intent in Android?",
     "options": [
-      "To enable communication between components (e.g., starting an activity, launching a service)",
       "To store and retrieve data in a local database",
+      "To enable communication between components (e.g., starting an activity, launching a service)",
       "To handle background tasks and long-running operations",
       "To define the layout and appearance of an activity"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   },
   {
     "question": "Which component is used to store data locally on an Android device?",
@@ -92,111 +92,111 @@
   {
     "question": "Which permission is required to access the internet in an Android app?",
     "options": [
-      "INTERNET",
       "ACCESS_NETWORK_STATE",
       "READ_EXTERNAL_STORAGE",
-      "CAMERA"
+      "CAMERA",
+      "INTERNET"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   },
   {
     "question": "Which layout manager is used to arrange elements in a grid-like fashion in Android?",
     "options": [
-      "GridLayout",
       "LinearLayout",
       "RelativeLayout",
+      "GridLayout",
       "ConstraintLayout"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 2
   },
   {
     "question": "Which component is used to display a list of scrollable items in Android?",
     "options": [
-      "RecyclerView",
       "ListView",
-      "GridView",
-      "ScrollView"
+      "ScrollView",
+      "RecyclerView",
+      "GridView"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 2
   },
   {
     "question": "What is the purpose of the AndroidManifest.xml file in an Android app?",
     "options": [
-      "To declare the app's components, permissions, and other essential information",
       "To define the layout and appearance of an activity",
-      "To store and retrieve data in a local database",
-      "To handle user interactions and events"
+      "To handle user interactions and events",
+      "To declare the app's components, permissions, and other essential information",
+      "To store and retrieve data in a local database"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 2
   },
   {
     "question": "Which component is used to perform background tasks and communicate with remote servers in Android?",
     "options": [
-      "Service",
       "Activity",
-      "BroadcastReceiver",
-      "ContentProvider"
+      "ContentProvider",
+      "Service",
+      "BroadcastReceiver"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 2
   },
   {
     "question": "Which API level corresponds to Android 11?",
     "options": [
-      "API level 30",
       "API level 29",
-      "API level 28",
-      "API level 27"
+      "API level 27",
+      "API level 30",
+      "API level 28"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 2
   },
   {
     "question": "Which component is used to display notifications to the user in Android?",
     "options": [
-      "Notification",
       "Toast",
       "AlertDialog",
-      "DialogFragment"
+      "DialogFragment",
+      "Notification"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   },
   {
     "question": "What is the purpose of the Gradle build system in Android development?",
     "options": [
-      "To automate the build process and manage dependencies",
       "To write and execute unit tests",
+      "To handle network requests and API calls",
       "To design the user interface of an app",
-      "To handle network requests and API calls"
+      "To automate the build process and manage dependencies"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   },
   {
     "question": "Which component is used to schedule and run tasks at specific intervals in Android?",
     "options": [
-      "AlarmManager",
       "Handler",
       "AsyncTask",
+      "AlarmManager",
       "TimerTask"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 2
   },
   {
     "question": "Which class is used to perform network operations in Android?",
     "options": [
-      "HttpURLConnection",
-      "JsonParser",
       "HttpClient",
-      "URL"
+      "JsonParser",
+      "URL",
+      "HttpURLConnection"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   },
   {
     "question": "What is the purpose of the Android Emulator?",
     "options": [
-      "To run and test Android apps on a virtual device",
       "To analyze and optimize app performance",
       "To publish apps on the Google Play Store",
-      "To debug and fix issues in Android apps"
+      "To debug and fix issues in Android apps",
+      "To run and test Android apps on a virtual device"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   }
 ]

@@ -2,50 +2,50 @@
   {
     "question": "What is C++?",
     "options": [
-      "A programming language",
-      "A markup language",
+      "An operating system",
       "A scripting language",
-      "An operating system"
+      "A programming language",
+      "A markup language"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 2
   },
   {
     "question": "Who developed C++?",
     "options": [
-      "Bjarne Stroustrup",
-      "Dennis Ritchie",
       "Guido van Rossum",
-      "James Gosling"
+      "Bjarne Stroustrup",
+      "James Gosling",
+      "Dennis Ritchie"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   },
   {
     "question": "Which year was the first standardized version of C++ released?",
     "options": [
-      "1998",
       "1985",
       "2001",
-      "1991"
+      "1991",
+      "1998"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   },
   {
     "question": "Which keyword is used to declare a variable in C++?",
     "options": [
-      "int",
+      "variable",
       "var",
       "float",
-      "variable"
+      "int"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   },
   {
     "question": "Which C++ header file is used for input/output operations?",
     "options": [
       "<iostream>",
-      "<stdio.h>",
+      "<fstream>",
       "<stdlib.h>",
-      "<fstream>"
+      "<stdio.h>"
     ],
     "correctAnswerIndex": 0
   },
@@ -53,149 +53,149 @@
     "question": "What is the output of the following code?\n\n```cpp\n#include <iostream>\n\nint main() {\n    int x = 5;\n    std::cout << x;\n    return 0;\n}```",
     "options": [
       "5",
-      "0",
       "Error",
-      "Undefined"
+      "Undefined",
+      "0"
     ],
     "correctAnswerIndex": 0
   },
   {
     "question": "Which operator is used to access the memory address of a variable in C++?",
     "options": [
-      "&",
       "*",
       "#",
-      "$"
+      "$",
+      "&"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   },
   {
     "question": "Which C++ keyword is used to define a function?",
     "options": [
-      "void",
       "function",
+      "void",
       "define",
       "func"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   },
   {
     "question": "Which operator is used to perform pointer arithmetic in C++?",
     "options": [
+      "*",
       "+",
       "-",
-      "*",
       "/"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   },
   {
     "question": "What is the purpose of the 'static' keyword in C++?",
     "options": [
       "To declare a variable or function with a static storage duration",
-      "To define a loop",
       "To create an instance of a class",
-      "To handle exceptions"
+      "To handle exceptions",
+      "To define a loop"
     ],
     "correctAnswerIndex": 0
   },
   {
     "question": "Which C++ keyword is used to indicate the end of a conditional statement?",
     "options": [
-      "endif",
-      "else",
       "end",
-      "endif"
+      "endif",
+      "endif",
+      "else"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   },
   {
     "question": "Which C++ data type is used to represent whole numbers?",
     "options": [
-      "int",
-      "float",
       "char",
-      "double"
+      "double",
+      "int",
+      "float"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 2
   },
   {
     "question": "What is the purpose of the 'break' keyword in C++?",
     "options": [
       "To exit a loop or switch statement",
-      "To define a loop",
       "To continue to the next iteration of a loop",
-      "To handle exceptions"
+      "To handle exceptions",
+      "To define a loop"
     ],
     "correctAnswerIndex": 0
   },
   {
     "question": "Which C++ data type is used to represent true or false values?",
     "options": [
+      "double",
       "bool",
       "int",
-      "char",
-      "double"
+      "char"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   },
   {
     "question": "What is the output of the following code?\n\n```cpp\n#include <iostream>\n\nint main() {\n    int x = 10;\n    int y = x++;\n    std::cout << y;\n    return 0;\n}```",
     "options": [
+      "0",
       "10",
       "11",
-      "Error",
-      "0"
+      "Error"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   },
   {
     "question": "Which C++ keyword is used to define a class?",
     "options": [
-      "class",
-      "define",
       "struct",
-      "type"
+      "class",
+      "type",
+      "define"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   },
   {
     "question": "What is the purpose of the 'const' keyword in C++?",
     "options": [
-      "To define a constant value that cannot be modified",
       "To declare a variable or function with a constant storage duration",
-      "To define a loop",
-      "To handle exceptions"
+      "To define a constant value that cannot be modified",
+      "To handle exceptions",
+      "To define a loop"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   },
   {
     "question": "Which operator is used for logical AND in C++?",
     "options": [
       "&&",
+      "&",
       "||",
-      "!",
-      "&"
+      "!"
     ],
     "correctAnswerIndex": 0
   },
   {
     "question": "Which C++ header file is used for mathematical functions?",
     "options": [
-      "<cmath>",
+      "<iomanip>",
       "<math.h>",
-      "<iostream>",
-      "<iomanip>"
+      "<cmath>",
+      "<iostream>"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 2
   },
   {
     "question": "What is the purpose of the 'return' statement in C++?",
     "options": [
       "To exit a function and return a value",
-      "To define a loop",
       "To continue to the next iteration of a loop",
-      "To handle exceptions"
+      "To handle exceptions",
+      "To define a loop"
     ],
     "correctAnswerIndex": 0
   }

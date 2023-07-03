@@ -618,3 +618,4 @@ class QuizResultDetailPage extends StatelessWidget {
 } */
 
 
+// mélangées de manière aléatoire les options de réponse pour  chaque question.
