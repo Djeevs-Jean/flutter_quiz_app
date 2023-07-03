@@ -2,211 +2,211 @@
   {
     "question": "What does CSS stand for?",
     "options": [
+      "Colorful Style Sheets",
       "Cascading Style Sheets",
       "Creative Style Sheets",
-      "Computer Style Sheets",
-      "Colorful Style Sheets"
+      "Computer Style Sheets"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   },
   {
     "question": "Which HTML tag is used to include CSS code directly within an HTML document?",
     "options": [
       "<style>",
-      "<css>",
+      "<link>",
       "<script>",
-      "<link>"
+      "<css>"
     ],
     "correctAnswerIndex": 0
   },
   {
     "question": "Which CSS property is used to change the background color of an element?",
     "options": [
-      "background-color",
       "color",
       "text-color",
-      "bgcolor"
+      "bgcolor",
+      "background-color"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   },
   {
     "question": "Which CSS property is used to change the font size of an element?",
     "options": [
-      "font-size",
-      "text-size",
+      "text-style",
       "font-style",
-      "text-style"
+      "font-size",
+      "text-size"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 2
   },
   {
     "question": "Which CSS property is used to add space between the border and content of an element?",
     "options": [
-      "padding",
-      "margin",
       "border",
-      "spacing"
+      "spacing",
+      "margin",
+      "padding"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   },
   {
     "question": "Which CSS property is used to make text bold?",
     "options": [
+      "bold",
       "font-weight",
-      "text-style",
       "text-decoration",
-      "bold"
+      "text-style"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   },
   {
     "question": "Which CSS property is used to align text to the center of an element?",
     "options": [
-      "text-align",
       "align",
+      "text-align",
       "center",
       "text-center"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   },
   {
     "question": "Which CSS property is used to add a border to an element?",
     "options": [
-      "border",
-      "border-style",
       "border-color",
-      "border-width"
+      "border-width",
+      "border-style",
+      "border"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   },
   {
     "question": "Which CSS property is used to control the transparency of an element?",
     "options": [
-      "opacity",
-      "transparency",
       "visibility",
-      "alpha"
+      "transparency",
+      "alpha",
+      "opacity"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   },
   {
     "question": "Which CSS property is used to create a drop shadow effect for an element?",
     "options": [
-      "box-shadow",
-      "shadow",
       "text-shadow",
-      "drop-shadow"
+      "shadow",
+      "drop-shadow",
+      "box-shadow"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   },
   {
     "question": "Which CSS property is used to control the height of an element?",
     "options": [
-      "height",
-      "size",
       "width",
-      "length"
+      "length",
+      "height",
+      "size"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 2
   },
   {
     "question": "Which CSS property is used to control the visibility of an element?",
     "options": [
-      "visibility",
+      "visible",
       "display",
       "hidden",
-      "visible"
+      "visibility"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   },
   {
     "question": "Which CSS property is used to control the spacing between lines of text?",
     "options": [
       "line-height",
       "letter-spacing",
-      "word-spacing",
-      "text-spacing"
+      "text-spacing",
+      "word-spacing"
     ],
     "correctAnswerIndex": 0
   },
   {
     "question": "Which CSS property is used to control the order of stacked elements?",
     "options": [
-      "z-index",
-      "order",
       "stack-index",
-      "layer"
+      "layer",
+      "z-index",
+      "order"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 2
   },
   {
     "question": "Which CSS property is used to control the text decoration?",
     "options": [
+      "decoration",
       "text-decoration",
       "decorate",
-      "decoration",
       "line-decoration"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   },
   {
     "question": "Which CSS property is used to control the visibility of an element on printed pages?",
     "options": [
-      "display",
       "visible",
+      "page-visibility",
       "print",
-      "page-visibility"
+      "display"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 2
   },
   {
     "question": "Which CSS property is used to control the positioning of an element?",
     "options": [
-      "position",
       "place",
+      "align",
       "top",
-      "align"
+      "position"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   },
   {
     "question": "Which CSS property is used to control the vertical alignment of text within an element?",
     "options": [
-      "vertical-align",
+      "line-height",
       "text-align",
       "align",
-      "line-height"
+      "vertical-align"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   },
   {
     "question": "Which CSS property is used to control the order of elements in a flex container?",
     "options": [
-      "order",
       "flex-order",
-      "position",
-      "flex-position"
+      "order",
+      "flex-position",
+      "position"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   },
   {
     "question": "Which CSS property is used to control the display behavior of an element?",
     "options": [
-      "display",
       "visible",
+      "block",
       "show",
-      "block"
+      "display"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 3
   },
   {
     "question": "Which CSS property is used to control the indentation of the first line in a block-level element?",
     "options": [
-      "text-indent",
       "indent",
+      "text-indent",
       "line-indent",
       "first-line-indent"
     ],
-    "correctAnswerIndex": 0
+    "correctAnswerIndex": 1
   }
 ]
