@@ -116,7 +116,7 @@ class _MainScreenState extends State<MainScreen> {
           children: <Widget>[
             UserAccountsDrawerHeader(
               accountName: Text(titleAppbar),
-              accountEmail: Text('quizapp@dev.com'),
+              accountEmail: Text('mastercodequiz@dev.com'),
                 currentAccountPicture: CircleAvatar(
                   backgroundImage: AssetImage('assets/icons/icon_master.png'),
                 ),
