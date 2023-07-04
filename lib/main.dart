@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quiz/screens/activity_page.dart';
 import 'package:flutter_quiz/screens/quizzes_page.dart';
-import 'package:flutter_quiz/screens/faq_page.dart';
+import 'package:flutter_quiz/screens/about_page.dart';
 // import 'package:flutter_quiz/adapter/adapter.dart';
 import 'package:easy_localization/easy_localization.dart';
 

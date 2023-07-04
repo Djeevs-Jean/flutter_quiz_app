@@ -1,40 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
-class FAQPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('FAQ'),
-      ),
-      body: ListView(
-        children: [
-          ExpansionTile(
-            title: Text('Question 1'),
-            children: [
-              ListTile(
-                title: Text('Réponse 1'),
-              ),
-            ],
-          ),
-          ExpansionTile(
-            title: Text('Question 2'),
-            children: [
-              ListTile(
-                title: Text('Réponse 2'),
-              ),
-            ],
-          ),
-          // Ajoutez autant de questions et réponses que nécessaire
-        ],
-      ),
-    );
-  }
-}
-
-
-
 class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
