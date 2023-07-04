@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_quiz/_widget/_index_quiz_widget.dart';
+import 'package:flutter_quiz/screens/begin_quiz.dart';
 import 'package:flutter_quiz/model/model.dart';
 import 'dart:convert';
 
