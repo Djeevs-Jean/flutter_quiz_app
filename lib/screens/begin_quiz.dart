@@ -7,7 +7,7 @@ import 'package:flutter_quiz/model/model.dart';
 
 
 class QuestionSelectionPage extends StatefulWidget {
-  final QuestionModel questionModel;
+  final QuizPresentModel questionModel;
 
   QuestionSelectionPage({
     required this.questionModel,
@@ -31,17 +31,15 @@ class _QuestionSelectionPageState extends State<QuestionSelectionPage> {
   }
 
   void loadQuestions() async {
-  String data = await DefaultAssetBundle.of(context).loadString('$filePath${widget.questionModel.file}.json');
-  List<dynamic> jsonData = json.decode(data);
-  questions = jsonData.map((item) => Question.fromJson(item)).toList();
+    String data = await DefaultAssetBundle.of(context).loadString('$filePath${widget.questionModel.file}.json');
+    List<dynamic> jsonData = json.decode(data);
+    questions = jsonData.map((item) => Question.fromJson(item)).toList();
+    questions.shuffle(Random());
 
-  // Shuffle the list of questions
-  questions.shuffle(Random());
-
-  setState(() {
-    maxQuestionCount = questions.length;
-  });
-}
+    setState(() {
+      maxQuestionCount = questions.length;
+    });
+  }
 
   @override
   void setState(VoidCallback fn) {
@@ -85,13 +83,11 @@ class _QuestionSelectionPageState extends State<QuestionSelectionPage> {
               ),
             ),
 
-
             SizedBox(height: 15,),
 
             Center(child: Text(_selectedQuestion.toInt().toString())),
 
             SizedBox(height: 15,),
-
 
             SliderTheme(
               data: SliderTheme.of(context).copyWith(
@@ -124,8 +120,8 @@ class _QuestionSelectionPageState extends State<QuestionSelectionPage> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => QuestionListQuestionQuiz(
-                            questionModel: widget.questionModel,
+                          builder: (context) => QuizzesPresentation(
+                            quizPresentModel: widget.questionModel,
                             questions: selectedQuestions,
                           ),
                         ),

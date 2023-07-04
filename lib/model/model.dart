@@ -83,15 +83,15 @@ class QuizResult {
   }
 }
 
-class QuestionModel {
+class QuizPresentModel {
   String quizTitle;
   String file;
   String image;
 
-  QuestionModel({required this.quizTitle, required this.file, required this.image});
+  QuizPresentModel({required this.quizTitle, required this.file, required this.image});
 
-  factory QuestionModel.fromJson(Map<String, dynamic> json) {
-    return QuestionModel(
+  factory QuizPresentModel.fromJson(Map<String, dynamic> json) {
+    return QuizPresentModel(
       quizTitle: json['quizTitle'],
       file: json['file'],
       image: json['image'],

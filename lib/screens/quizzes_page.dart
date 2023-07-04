@@ -11,7 +11,7 @@ class QuizzesTab extends StatefulWidget {
 }
 
 class _QuizzesTabState extends State<QuizzesTab> {
-  List<QuestionModel> questionsModel = [];
+  List<QuizPresentModel> questionsModel = [];
   static String filePath = 'assets/conf/conf.json';
 
   @override
@@ -23,7 +23,7 @@ class _QuizzesTabState extends State<QuizzesTab> {
   void loadQuestionsModel() async {
     String data = await DefaultAssetBundle.of(context).loadString(filePath);
     List<dynamic> jsonData = json.decode(data);
-    questionsModel = jsonData.map((item) => QuestionModel.fromJson(item)).toList();
+    questionsModel = jsonData.map((item) => QuizPresentModel.fromJson(item)).toList();
     setState(() {});
   }
 
