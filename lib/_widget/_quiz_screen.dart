@@ -86,7 +86,7 @@ class _QuizzesPresentationState extends State<QuizzesPresentation> {
       builder: (BuildContext context) {
         return AlertDialog(
           title: const Text('Confirmation'),
-          content: const Text('Voulez-vous vraiment quitter le quiz ? Vos modifications seront perdues.'),
+          content: const Text('Are you sure you want to quit the quiz? Your changes will be lost.'),
           actions: <Widget>[
             ElevatedButton(
               onPressed: () {
