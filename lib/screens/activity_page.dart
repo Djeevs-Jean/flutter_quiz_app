@@ -132,7 +132,7 @@ class _ActivityTabState extends State<ActivityTab> {
                           ),
                           SizedBox(width: 4),
                           Text(
-                            '${quizResult.countQuestion} ${'question'.tr().toString()}',
+                            '${quizResult.countQuestion} ${'questions'.tr().toString()}',
                             style: TextStyle(
                               color: Colors.black,
                             ),
