@@ -1,49 +1,8 @@
-// import 'package:path_provider/path_provider.dart' as path_provider;
-// import 'package:hive_flutter/hive_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_quiz/screens/activity_page.dart';
 import 'package:flutter_quiz/screens/quizzes_page.dart';
 import 'package:flutter_quiz/screens/about_page.dart';
-// import 'package:flutter_quiz/adapter/adapter.dart';
 import 'package:easy_localization/easy_localization.dart';
-
-/* Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Hive.initFlutter();
-  await EasyLocalization.ensureInitialized();
-  
-  runApp(
-    EasyLocalization(
-      supportedLocales: [Locale('en', 'US'), Locale('en', 'HT')],
-      path: 'assets/translations', // <-- change the path of the translation files 
-      fallbackLocale: Locale('en', 'HT'),
-      child: MyApp()
-    ),
-  );
-}
- */
-
-/* void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-
-  // Initialiser Hive et obtenir le répertoire d'application
-  await Hive.initFlutter();
-  final appDocumentDir = await path_provider.getApplicationDocumentsDirectory();
-  Hive.init(appDocumentDir.path);
-
-  // Enregistrer les adaptateurs pour les modèles
-  Hive.registerAdapter(QuizResultAdapter());
-
-  runApp(
-    EasyLocalization(
-      supportedLocales: [Locale('en', 'US'), Locale('en', 'HT')],
-      path: 'assets/translations',
-      fallbackLocale: Locale('en', 'HT'),
-      startLocale: Locale('en', 'US'), // Définir la locale de départ
-      child: MyApp(),
-    ),
-  );
-} */
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
