@@ -29,10 +29,8 @@ class _ActivityTabState extends State<ActivityTab> {
   }
 
   void deleteQuizResult(QuizResult quizResult) async {
-    print('Deleting quiz result with ID: ${quizResult.id}');
     final quizResultData = ServiceQuizResult();
     await quizResultData.deleteQuizResult(quizResult);
-
     setState(() {
       _quizResultsFuture = fetchQuizResults();
     });
@@ -119,8 +117,7 @@ class _ActivityTabState extends State<ActivityTab> {
                             color: Colors.blue,
                           ),
                           SizedBox(width: 4),
-                          Text(
-                            'Date: ${DateFormat('MMM d, h:mm a').format(quizResult.date)}',
+                          Text('Date: ${DateFormat('MMM d, h:mm a').format(quizResult.date)}',
                             style: TextStyle(
                               color: Colors.black,
                             ),
