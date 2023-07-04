@@ -28,84 +28,75 @@ class _QuizzesTabState extends State<QuizzesTab> {
   }
 
   @override
-Widget build(BuildContext context) {
-  return GridView.builder(
-    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 16),
-    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-      crossAxisCount: 2,
-      crossAxisSpacing: 16,
-      mainAxisSpacing: 16,
-    ),
-    itemCount: questionsModel.length,
-    itemBuilder: (context, index) {
-      final qmodel = questionsModel[index];
-      return InkWell(
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => QuestionSelectionPage(questionModel: qmodel),
-            ),
-          );
-        },
-        child: Card(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-          elevation: 4,
-          child: Stack(
-            children: [
-              Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.vertical(top: Radius.circular(10)),
-                  image: DecorationImage(
-                    image: AssetImage(qmodel.image),
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              Positioned.fill(
-                child: Container(
+  Widget build(BuildContext context) {
+    return GridView.builder(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 16),
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        crossAxisSpacing: 16,
+        mainAxisSpacing: 16,
+      ),
+      itemCount: questionsModel.length,
+      itemBuilder: (context, index) {
+        final qmodel = questionsModel[index];
+        return InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => QuestionSelectionPage(questionModel: qmodel),),
+            );
+          },
+          child: Card(
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+            elevation: 4,
+            child: Stack(
+              children: [
+                Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.vertical(top: Radius.circular(10)),
-                    gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [Colors.transparent, Colors.black.withOpacity(0.6)],
+                    image: DecorationImage(image: AssetImage(qmodel.image),
+                      fit: BoxFit.cover,
                     ),
                   ),
                 ),
-              ),
-              Positioned(
-                bottom: 16,
-                left: 16,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      qmodel.quizTitle,
-                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
+                Positioned.fill(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.vertical(top: Radius.circular(10)),
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [Colors.transparent, Colors.black.withOpacity(0.6)],
+                      ),
                     ),
-                    SizedBox(height: 4),
-                    Row(
-                      children: [
-                        Icon(Icons.star, color: Colors.yellow, size: 16),
-                        SizedBox(width: 4),
-                        Text(
-                          qmodel.quizTitle.toString(),
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ],
-                    ),
-                  ],
+                  ),
                 ),
-              ),
-            ],
+                Positioned(
+                  bottom: 16,
+                  left: 16,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(qmodel.quizTitle, style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.white),
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      SizedBox(height: 4),
+                      Row(
+                        children: [
+                          Icon(Icons.star, color: Colors.yellow, size: 16),
+                          SizedBox(width: 4),
+                          Text(qmodel.quizTitle.toString(), style: TextStyle(color: Colors.white),),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
-        ),
-      );
-    },
-  );
-}
-
+        );
+      },
+    );
+  }
 }
