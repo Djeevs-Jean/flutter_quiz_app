@@ -15,6 +15,10 @@
     "about4": "- Choix parmi une variété de quiz dans différents langages de programmation.",
     "about5": "- Répondez à des questions à choix multiples pour tester vos compétences.",
     "about6": "- Obtenez des scores pour chaque quiz et suivez votre progression.",
-    "about7": "Nous espérons que notre application vous aidera à approfondir vos connaissances en programmation et à vous amuser en même temps !"
+    "about7": "Nous espérons que notre application vous aidera à approfondir vos connaissances en programmation et à vous amuser en même temps !",
+    "score": "Score",
+    "date": "Date",
+    "questions": "questions"
+
 
 }

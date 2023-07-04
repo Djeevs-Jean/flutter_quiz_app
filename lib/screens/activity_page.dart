@@ -3,7 +3,6 @@ import 'package:flutter_quiz/service/service_sharepreferences.dart';
 // import 'package:flutter_quiz/adapter/crud_hive.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-// import 'package:flutter_quiz/service/service_json.dart';
 import 'package:intl/intl.dart';
 
 class ActivityTab extends StatefulWidget {
@@ -102,7 +101,7 @@ class _ActivityTabState extends State<ActivityTab> {
                           ),
                           SizedBox(width: 4),
                           Text(
-                            'Score: ${quizResult.score}%',
+                            '${'score'.tr().toString()}: ${quizResult.score}%',
                             style: TextStyle(
                               color: Colors.black,
                             ),
@@ -117,7 +116,7 @@ class _ActivityTabState extends State<ActivityTab> {
                             color: Colors.blue,
                           ),
                           SizedBox(width: 4),
-                          Text('Date: ${DateFormat('MMM d, h:mm a').format(quizResult.date)}',
+                          Text('${'date'.tr().toString()}: ${DateFormat('MMM d, h:mm a').format(quizResult.date)}',
                             style: TextStyle(
                               color: Colors.black,
                             ),
@@ -133,7 +132,7 @@ class _ActivityTabState extends State<ActivityTab> {
                           ),
                           SizedBox(width: 4),
                           Text(
-                            '${quizResult.countQuestion} questions',
+                            '${quizResult.countQuestion} ${'question'.tr().toString()}',
                             style: TextStyle(
                               color: Colors.black,
                             ),
