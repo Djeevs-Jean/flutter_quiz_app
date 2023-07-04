@@ -140,11 +140,12 @@ class _MainScreenState extends State<MainScreen> {
               ListTile(
                 leading: Icon(Icons.help),
                 title: Text('about'.tr()),
+                
                 onTap: () {
+                  Navigator.pop(context);
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      // builder: (context) => FAQPage(),
                       builder: (context) => AboutPage(),
                     ),
                   );
