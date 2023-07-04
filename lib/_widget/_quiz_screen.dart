@@ -137,129 +137,58 @@ class _QuizzesPresentationState extends State<QuizzesPresentation> {
           padding: const EdgeInsets.all(10),
           child: widget.questions.isEmpty
               ? const Center(child: CircularProgressIndicator())
-              : 
-              Column(
-  crossAxisAlignment: CrossAxisAlignment.stretch,
-  children: [
-    Expanded(
-      child: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(10),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              LinearProgressIndicator(
-                value: progress,
-                color: Colors.blue,
-                backgroundColor: Colors.pink,
-              ),
-              const SizedBox(height: 16),
-              Text(
-                '${'question'.tr().toString()} ${currentQuestionIndex + 1}/${widget.questions.length}',
-                style: const TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
+              : Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    LinearProgressIndicator(
+                      value: progress,
+                      color: Colors.blue,
+                      backgroundColor: Colors.pink,
+                    ),
+                    const SizedBox(height: 16),
+                    Text(
+                      '${'question'.tr().toString()} ${currentQuestionIndex + 1}/${widget.questions.length}',
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: 16),
+                    QuestionSingle(
+                      question: widget.questions[currentQuestionIndex],
+                      selectedAnswerIndex: selectedAnswerIndex,
+                      showCorrectAnswer: showCorrectAnswer,
+                      onAnswerSelected: (index) {
+                        setState(() {
+                          selectedAnswerIndex = index;
+                        });
+                      },
+                    ),
+                    const SizedBox(height: 16),
+                    if (!showNextButton)
+                      ElevatedButton(
+                        onPressed: selectedAnswerIndex == null || showCorrectAnswer
+                            ? null
+                            : () {
+                                checkAnswer();
+                              },
+                        child: Text('${'btncheckanswer'.tr().toString()}'),
+                      ),
+                    const SizedBox(height: 16),
+                    if (showNextButton)
+                      ElevatedButton(
+                        onPressed: () {
+                          showNextQuestion();
+                        },
+                        child: Text('${'btnnext'.tr().toString()}'),
+                      ),
+                    const SizedBox(height: 16),
+                  ],
                 ),
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 16),
-              QuestionSingle(
-                question: widget.questions[currentQuestionIndex],
-                selectedAnswerIndex: selectedAnswerIndex,
-                showCorrectAnswer: showCorrectAnswer,
-                onAnswerSelected: (index) {
-                  setState(() {
-                    selectedAnswerIndex = index;
-                  });
-                },
-              ),
-              const SizedBox(height: 16),
-            ],
-          ),
-        ),
-      ),
-    ),
-    Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0),
-      child: Column(
-        children: [
-          if (!showNextButton)
-            ElevatedButton(
-              onPressed: selectedAnswerIndex == null || showCorrectAnswer
-                  ? null
-                  : () {
-                      checkAnswer();
-                    },
-              child: Text('verify Answer'),
-            ),
-          const SizedBox(height: 16),
-          if (showNextButton)
-            ElevatedButton(
-              onPressed: () {
-                showNextQuestion();
-              },
-              child: Text('Next Question'),
-            ),
-          const SizedBox(height: 16),
-        ],
-      ),
-    ),
-  ],
-),
-
         ),
         ),
       ),
     );
   }
 }
-
-/* Column(
-  crossAxisAlignment: CrossAxisAlignment.stretch,
-  children: [
-    LinearProgressIndicator(
-      value: progress,
-      color: Colors.blue,
-      backgroundColor: Colors.pink,
-    ),
-    const SizedBox(height: 16),
-    Text(
-      '${'question'.tr().toString()} ${currentQuestionIndex + 1}/${widget.questions.length}',
-      style: const TextStyle(
-        fontSize: 20,
-        fontWeight: FontWeight.bold,
-      ),
-      textAlign: TextAlign.center,
-    ),
-    const SizedBox(height: 16),
-    QuestionSingle(
-      question: widget.questions[currentQuestionIndex],
-      selectedAnswerIndex: selectedAnswerIndex,
-      showCorrectAnswer: showCorrectAnswer,
-      onAnswerSelected: (index) {
-        setState(() {
-          selectedAnswerIndex = index;
-        });
-      },
-    ),
-    const SizedBox(height: 16),
-    if (!showNextButton)
-      ElevatedButton(
-        onPressed: selectedAnswerIndex == null || showCorrectAnswer
-            ? null
-            : () {
-                checkAnswer();
-              },
-        child: Text('verify Answer'),
-      ),
-    const SizedBox(height: 16),
-    if (showNextButton)
-      ElevatedButton(
-        onPressed: () {
-          showNextQuestion();
-        },
-        child: Text('Next Question'),
-      ),
-    const SizedBox(height: 16),
-  ],
-), */
