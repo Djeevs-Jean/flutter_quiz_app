@@ -1,6 +1,8 @@
 {
     "apptitle":"Master Code Quiz",
     "btnstartquiz":"Start Quiz",
+    "btncheckanswer": "Check Answer",
+    "btnnext": "Next Question",
     "indexquiz": "Select the number of questions you want to have for this quiz.",
     "labelquiz": "Quizzes",
     "labelactivity": "Activity",
@@ -18,7 +20,7 @@
     "about7": "Nous espérons que notre application vous aidera à approfondir vos connaissances en programmation et à vous amuser en même temps !",
     "score": "Score",
     "date": "Date",
-    "questions": "questions"
-
+    "questions": "questions",
+    "question": "Question"
 
 }

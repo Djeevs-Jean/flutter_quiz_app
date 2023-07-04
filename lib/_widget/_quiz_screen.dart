@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_quiz/_widget/_widget_question.dart';
 import 'package:flutter_quiz/screens/end_quiz.dart';
@@ -130,7 +131,7 @@ class _QuizzesPresentationState extends State<QuizzesPresentation> {
       onWillPop: _onWillPop,
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Quiz App'),
+          title: Text(widget.quizPresentModel.quizTitle),
         ),
         body: SingleChildScrollView(child: Padding(
           padding: const EdgeInsets.all(10),
@@ -146,7 +147,7 @@ class _QuizzesPresentationState extends State<QuizzesPresentation> {
                     ),
                     const SizedBox(height: 16),
                     Text(
-                      'Question ${currentQuestionIndex + 1}/${widget.questions.length}',
+                      '${'question'.tr().toString()} ${currentQuestionIndex + 1}/${widget.questions.length}',
                       style: const TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -172,7 +173,7 @@ class _QuizzesPresentationState extends State<QuizzesPresentation> {
                             : () {
                                 checkAnswer();
                               },
-                        child: const Text('Check Answer'),
+                        child: Text('${'btncheckanswer'.tr().toString()}'),
                       ),
                     const SizedBox(height: 16),
                     if (showNextButton)
@@ -180,7 +181,7 @@ class _QuizzesPresentationState extends State<QuizzesPresentation> {
                         onPressed: () {
                           showNextQuestion();
                         },
-                        child: const Text('Next Question'),
+                        child: Text('${'btnnext'.tr().toString()}'),
                       ),
                     const SizedBox(height: 16),
                   ],

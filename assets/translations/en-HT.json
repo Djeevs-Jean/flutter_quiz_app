@@ -1,6 +1,8 @@
 {
     "apptitle":"Maste Kod Kwiz",
     "btnstartquiz":"Demare Kwiz",
+    "btncheckanswer": "Verifye Repons",
+    "btnnext": "Ale nan lot kesyon",
     "indexquiz": "Chwazi kantite kesyon ou vle genyen pou egzamen sa a.",
     "labelquiz": "Kwiz Yo",
     "labelactivity": "Aktivite Yo",
@@ -18,6 +20,7 @@
     "about7": "Nou espere aplikasyon nou an pral ede w apwofondi konesans pwogram ou epi pran plezi an menm tan!",
     "score": "Sko",
     "date": "Dat",
-    "questions": "kesyon"
+    "questions": "kesyon",
+    "question": "Kesyon"
 
 }
