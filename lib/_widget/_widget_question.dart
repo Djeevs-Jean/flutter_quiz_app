@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_quiz/model/question.dart';
+import 'package:flutter_quiz/model/model.dart';
 
 
 /* class QuestionSingle extends StatelessWidget {

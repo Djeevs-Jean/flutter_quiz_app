@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter_quiz/model/question.dart';
+import 'package:flutter_quiz/model/model.dart';
 
 class ServiceQuizResult {
   static const String key = 'quiz_results';

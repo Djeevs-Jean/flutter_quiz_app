@@ -1,4 +1,4 @@
-import 'package:flutter_quiz/model/question.dart';
+import 'package:flutter_quiz/model/model.dart';
 import 'package:flutter_quiz/service/service_sharepreferences.dart';
 // import 'package:flutter_quiz/adapter/crud_hive.dart';
 import 'package:easy_localization/easy_localization.dart';

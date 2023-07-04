@@ -1,6 +1,3 @@
-import 'dart:math';
-import 'package:flutter/material.dart';
-
 
 class Question {
   String? category;
@@ -21,45 +18,6 @@ class Question {
   }
 }
 
-class CategoryQuestion {
-  final String name;
-  final IconData iconData;
-  final String description;
-
-  CategoryQuestion({required this.name, required this.iconData,
-    required this.description,
-  });
-}
-
-/* class QuizResult {
-  final int id; // Identifiant unique
-  final String quizTitle;
-  final double score;
-  final int countQuestion;
-  final DateTime date;
-
-  QuizResult({required this.id, required this.quizTitle, required this.score, required this.date, required this.countQuestion});
-
-  Map<String, dynamic> toMap() {
-    return {
-      'id': id,
-      'quizTitle': quizTitle,
-      'score': score,
-      'date':date.toIso8601String(),
-      'countQuestion': countQuestion,
-    };
-  }
-
-  factory QuizResult.fromMap(Map<String, dynamic> map) {
-    return QuizResult(
-      id: map['id'],
-      quizTitle: map['quizTitle'],
-      score: map['score'],
-      date: DateTime.parse(map['date']),
-      countQuestion: map['countQuestion'],
-    );
-  }
-} */
 class QuizResult {
   final String id; // Identifiant unique
   final String quizTitle;
@@ -75,17 +33,16 @@ class QuizResult {
   }) : id = _generateId(quizTitle, score);
 
   static String _generateId(String quizTitle, double score) {
-    final sanitizedTitle = _sanitizeString(quizTitle);
+    final sanitizedTitle = _regexString(quizTitle);
     final scoreString = score.toString();
     return '$sanitizedTitle-$scoreString';
   }
 
-  static String _sanitizeString(String input) {
+  static String _regexString(String input) {
     final sanitized = input.replaceAll(RegExp(r'[^a-zA-Z0-9]+'), '-');
     return sanitized.toLowerCase();
   }
 
-  
   factory QuizResult.fromJson(Map<String, dynamic> json) {
     return QuizResult(
       quizTitle: json['quizTitle'],
@@ -96,16 +53,14 @@ class QuizResult {
   }
 
   factory QuizResult.fromMap(Map<String, dynamic> map) {
-  return QuizResult(
-    // id: map['id'],
-    quizTitle: map['quizTitle'],
-    score: map['score'],
-    countQuestion: map['countQuestion'],
-    date: DateTime.parse(map['date']),
-  );
-}
-
-
+    return QuizResult(
+      // id: map['id'],
+      quizTitle: map['quizTitle'],
+      score: map['score'],
+      countQuestion: map['countQuestion'],
+      date: DateTime.parse(map['date']),
+    );
+  }
 
   Map<String, dynamic> toMap() {
     return {
@@ -127,38 +82,6 @@ class QuizResult {
     };
   }
 }
-
-/* 
-class QuizResult {
-  final int? id; // Identifiant unique
-  final String quizTitle;
-  final double score;
-  final int countQuestion;
-  final DateTime date;
-
-  QuizResult({this.id, required this.quizTitle, required this.score, required this.date, required this.countQuestion});
-  Map<String, dynamic> toMap() {
-    return {
-      'id': id,
-      'quizTitle': quizTitle,
-      'score': score,
-      'date': date.toIso8601String(),
-      'countQuestion': countQuestion,
-    };
-  }
-
-  factory QuizResult.fromMap(Map<String, dynamic> map) {
-    return QuizResult(
-      id: map['id'],
-      quizTitle: map['quizTitle'],
-      score: map['score'],
-      date: DateTime.parse(map['date']),
-      countQuestion: map['countQuestion'],
-    );
-  }
-}
- */
-
 
 class QuestionModel {
   String quizTitle;

@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_quiz/_widget/_quiz_screen.dart';
-import 'package:flutter_quiz/model/question.dart';
+import 'package:flutter_quiz/model/model.dart';
 
 
 class QuestionSelectionPage extends StatefulWidget {

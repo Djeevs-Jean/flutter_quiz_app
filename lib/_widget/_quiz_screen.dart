@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_quiz/_widget/_widget_question.dart';
 import 'package:flutter_quiz/screens/end_quiz.dart';
-import 'package:flutter_quiz/model/question.dart';
+import 'package:flutter_quiz/model/model.dart';
 import 'package:flutter_quiz/main.dart'; // Importez le fichier contenant MainScreen
 
 class QuestionListQuestionQuiz extends StatefulWidget {
