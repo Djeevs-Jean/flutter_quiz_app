@@ -1,5 +1,5 @@
 import 'package:flutter_quiz/model/question.dart';
-import 'package:flutter_quiz/sharedprefer/service_share.dart';
+import 'package:flutter_quiz/service/service_sharepreferences.dart';
 // import 'package:flutter_quiz/adapter/crud_hive.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
@@ -22,14 +22,14 @@ class _ActivityTabState extends State<ActivityTab> {
   }
 
   Future<List<QuizResult>> fetchQuizResults() async {
-    final quizResultData = QuizResultStorage();
+    final quizResultData = ServiceQuizResult();
     List<QuizResult> quizResults = await quizResultData.getQuizResults();
     return quizResults.reversed.toList();
   }
 
   void deleteQuizResult(QuizResult quizResult) async {
     print('Deleting quiz result with ID: ${quizResult.id}');
-    final quizResultData = QuizResultStorage();
+    final quizResultData = ServiceQuizResult();
     await quizResultData.deleteQuizResult(quizResult);
 
     setState(() {
