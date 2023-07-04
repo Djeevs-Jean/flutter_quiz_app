@@ -38,7 +38,6 @@ dependencies:
   easy_localization: ^3.0.2
   intl: ^0.17.0
   shared_preferences: ^2.2.0
-  uuid: ^3.0.7
 
 dev_dependencies:
   flutter_test:
@@ -78,15 +77,6 @@ flutter:
   - assets/images/  
   - assets/translations/  
   - assets/icons/icon_master.png
-  # - assets/images/python.jpg
-  # - assets/images/javascript.png
-  # - assets/images/dart.png
-  # - assets/images/java.png
-  # - assets/images/html.png
-  # - assets/images/cplusplus.png
-  # - assets/images/android.jpg
-  # - assets/images/sql.png
-  # - assets/data/data.json
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
